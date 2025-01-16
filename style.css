@@ -1,0 +1,134 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #050c3d; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Centered Container */
+  .container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background: #1e1e1e; /* Slightly lighter dark background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Heading Styling */
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #560eff; /* Bright yellow color for the heading */
+  }
+  
+  /* Input and Button Styling */
+  .todo-input-container input,
+  .todo-input-container button {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .todo-input-container input {
+    border: 1px solid #444; /* Subtle border for input */
+    background-color: #222; /* Darker input background */
+    color: white;
+  }
+  
+  .todo-input-container input::placeholder {
+    color: #888; /* Subtle placeholder text color */
+  }
+  
+  .todo-input-container button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-input-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* To-Do List Items */
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    background-color: #1f1f1f; /* Darker card background */
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-item.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .todo-item span {
+    flex: 1;
+    text-align: left;
+  }
+  
+  /* Buttons inside To-Do Items */
+  .todo-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-buttons button:hover {
+    background-color: #555;
+  }
+  
+  .todo-buttons .complete-btn {
+    background-color: #28a745; /* Green for complete */
+  }
+  
+  .todo-buttons .complete-btn:hover {
+    background-color: #218838;
+  }
+  
+  .todo-buttons .edit-btn {
+    background-color: #ffc107; /* Yellow for edit */
+    color: black;
+  }
+  
+  .todo-buttons .edit-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .todo-buttons .delete-btn {
+    background-color: #dc3545; /* Red for delete */
+  }
+  
+  .todo-buttons .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  
